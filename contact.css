@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Oswald";
+    src: url(./police/Oswald/Oswald-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: "Courgette";
+    src: url(./police/Courgette/Courgette-Regular.ttf);
+  }
+
+.main-global{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+.main-contact h2{
+    font-family: "Courgette", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.main-contact h3{
+    font-family: "Courgette", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 15px;
+    padding-left: 55px;
+}
+
+.main-contact p{
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size: 17px;
+    padding-bottom: 25px;
+    padding-left: 55px;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:421px;
+    width:869px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:421px;
+    width:869px;
+}
+
+
+  footer{
+      background-color: black;
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    
+    .footer-1{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 400px;
+    }
+    
+    .footer-1 article{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    footer h3{
+      color: white;
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    
+    footer a{
+      color: white;
+    }
+    
+    
+    footer label{
+      border: 2px solid white;
+      border-radius: 5px;
+      padding: 6px 20px;
+      color: white;
+      font-size: 15px;
+    }
+    
+    footer input{
+      border: 2px solid white;
+      border-radius: 5px;
+      padding: 6px 20px;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    
+    footer img{
+      width: 20px;
+      padding: 5px;
+      background-color: white;
+      border-radius: 5px;
+      height: auto;
+    }
+    
+    @media (max-width: 898px){
+    
+        footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+      }
+      .footer-1{
+        gap:0px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
+    }

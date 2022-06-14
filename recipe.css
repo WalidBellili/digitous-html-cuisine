@@ -48,3 +48,19 @@
   height: 200px;
   margin: 30px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .dessert {
+    display: flex;
+    flex-direction: row;
+  }
+  .recipe-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .recipe-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

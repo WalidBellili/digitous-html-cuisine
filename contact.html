@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="contact.css" />
-    <!--<link rel="stylesheet" href="main.css" />-->
+    <link rel="stylesheet" href="main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <!--<title>Cui'zine</title>
+    <title>Cui'zine</title>
   </head>
   <body>
     <div class="test">
@@ -29,7 +29,7 @@
             <article></article>
             <h1>Nous contacter</h1>
         </section>
-    </div>-->
+    </div>
     <main>
         <section class="main-global">
             <section class="main-contact">
@@ -38,27 +38,33 @@
                 <p>Station F</p>
                 <p>5 parvis Alan Turing</p>
                 <p>75013 PARIS</p>
-                <div class="mapouter">
-                    <div class="gmap_canvas">
-                        <iframe width="869" height="421" id="gmap_canvas" src="https://maps.google.com/maps?q=5%20parvis%20alan%20turing&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <div class="mapouter-phone">
+                    <div class="gmap_canvas_phone">
+                        <iframe width="500" height="406" id="gmap_canvas" src="https://maps.google.com/maps?q=5%20parvis%20alan%20turing&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://123movies-to.org"></a><br>
+                        <a href="https://www.embedgooglemap.net">google maps in website</a>
+                    </div>
+                </div>
+                <div class="mapouter-desktop">
+                    <div class="gmap_canvas_desktop">
+                        <iframe width="950" height="505" id="gmap_canvas" src="https://maps.google.com/maps?q=5%20parvis%20alan%20turing&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         <a href="https://123movies-to.org"></a><br>
                         <a href="https://www.embedgooglemap.net">google maps in website</a>
                     </div>
                 </div>
             </section>
             <section class="infos-contact">
-                <div class="flex-and-hide-input">
-                    <article>
+                    <article class="button">
                         <h4>Recherche</h4>
                         <input type="text" placeholder="Recherche.." />
                         <button>Ok</button>
                     </article>
-                    <article>
+                    <article class="button">
                         <h4>Newsletter</h4>
                         <input type="text" placeholder="Email.." />
                         <button>S'inscrire</button>
                     </article>
-                    <article class="handle-logo">
+                    <article>
                         <h4>Partager</h4>
                         <nav class="logo">
                         <i class="fa-brands fa-facebook-square"></i>
@@ -67,7 +73,6 @@
                         <i class="fa-brands fa-twitter-square"></i>
                         </nav>
                     </article>
-                </div>
             </section>
         </section>
     </main>

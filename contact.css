@@ -11,10 +11,11 @@
 .main-global{
     display: flex;
     justify-content: space-around;
-    margin: 50px 0px;
+    margin: 50px 90px;
 }
 
 .main-contact h2{
+    color: black;
     font-family: "Courgette", Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 35px;
@@ -37,87 +38,108 @@
     padding-left: 55px;
 }
 
-.mapouter{
+.mapouter-desktop{
     position:relative;
     text-align:right;
-    height:421px;
-    width:869px;
+    height:505px;
+    width:950px;
 }
 
-.gmap_canvas {
+.gmap_canvas_desktop {
     overflow:hidden;
     background:none!important;
-    height:421px;
-    width:869px;
+    height:505px;
+    width:950px;
 }
 
+.mapouter-phone{
+    position:relative;
+    text-align:right;
+    height:406px;
+    width:500px;
+}
 
-  footer{
-      background-color: black;
-      padding: 50px 20px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
+.gmap_canvas_phone {
+    overflow:hidden;
+    background:none!important;
+    height:406px;
+    width:500px;
+}
+
+.infos-contact h4{
+    font-family: "Courgette", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 15px 0px;
+
+}
+
+.infos-contact input{
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.infos-contact .button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infos-contact button{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.infos-contact button:hover{
+    background-color: black;
+    color: white;
+}
+
+input::placeholder{
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+.logo i{
+    padding-right: 25px;
+    cursor: pointer;
+}
+
     
-    .footer-1{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 400px;
-    }
+    @media (min-width: 700px){
+         
+
+        .mapouter-phone{
+            display: none;
+        }
+        
+        .gmap_canvas_phone {
+            display: none;
+        } 
     
-    .footer-1 article{
-      display: flex;
-      flex-direction: column;
-    }
+}
+    @media (max-width: 700px){
     
-    footer h3{
-      color: white;
-      font-size: 20px;
-      padding-bottom: 10px;
-    }
-    
-    footer a{
-      color: white;
-    }
-    
-    
-    footer label{
-      border: 2px solid white;
-      border-radius: 5px;
-      padding: 6px 20px;
-      color: white;
-      font-size: 15px;
-    }
-    
-    footer input{
-      border: 2px solid white;
-      border-radius: 5px;
-      padding: 6px 20px;
-      font-size: 15px;
-      margin-bottom: 15px;
-    }
-    
-    footer img{
-      width: 20px;
-      padding: 5px;
-      background-color: white;
-      border-radius: 5px;
-      height: auto;
-    }
-    
-    @media (max-width: 898px){
-    
-        footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-      }
-      .footer-1{
-        gap:0px;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-      }
+        .main-global{
+            display: flex;
+            flex-direction: column;
+            margin: 90px 10px;
+        }
+
+        .infos-contact{
+            display: none;
+        }
+
+        .mapouter-desktop{
+            display: none;
+        }
+        
+        .gmap_canvas_desktop {
+            display: none;
+        } 
     }

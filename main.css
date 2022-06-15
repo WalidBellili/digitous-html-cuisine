@@ -14,6 +14,7 @@ header {
   width: 100%;
   background: url(./img/header.jpg) fixed center/cover;
   backdrop-filter: brightness(30%);
+  font-family: "Courgette", Arial, Helvetica, sans-serif;
 }
 header,
 h1 li {
@@ -73,20 +74,15 @@ nav ul {
     visibility: visible;
   }
 }
-
-
-.left-part h2 {
-  color: white;
-  font-family: "Courgette", Arial, Helvetica, sans-serif;
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  font-weight: bold;
-  padding-left: 5%;
+/* End NAV */
+/* Main */
+.main-container {
+  border: 4px solid blue;
+  flex: 1;
 }
-
+.flex-and-hide-input {
+  visibility: hidden;
+}
 footer {
   background-color: black;
   padding: 50px 20px;
@@ -152,20 +148,30 @@ footer input {
   height: auto;
 }
 
- 
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-
-  .footer-1 {
-    gap: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
+.footer-1 {
+  gap: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .flex-and-hide-input {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (min-width: 992px) {
+  .flex-and-hide-input {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 500px;
+  }
 }

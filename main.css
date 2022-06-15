@@ -162,5 +162,18 @@ footer input {
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .footer-1 {
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }
+

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="post.css" />
-    <title>Vos articles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Cui'zine</title>
   </head>
   <body>
     <header>
@@ -33,56 +36,86 @@
       </section>
     </header>
     <main>
-      <h2>Intro</h2>
-      <p>
-        La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
-        son premier restaurant à Paris dans le quartier latin. Antoine de
-        Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
-        sarrazin!
-      </p>
-      <h2>Développement</h2>
-      <p>
-        La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
-        son premier restaurant à Paris dans le quartier latin. Antoine de
-        Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
-        sarrazin!
-      </p>
-      <br />
-      <p>
-        La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
-        son premier restaurant à Paris dans le quartier latin. Antoine de
-        Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
-        sarrazin!
-      </p>
-      <br />
-      <p>
-        La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
-        son premier restaurant à Paris dans le quartier latin. Antoine de
-        Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
-        sarrazin!
-      </p>
-      <br />
-      <p>
-        La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
-        son premier restaurant à Paris dans le quartier latin. Antoine de
-        Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
-        sarrazin!
-      </p>
-      <h2>Conclusion</h2>
-      <br />
-      <p>
-        La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
-        son premier restaurant à Paris dans le quartier latin. Antoine de
-        Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
-        sarrazin!
-      </p>
-    </main>
-    <!--  -->
+  <section class="post-global">
+    <section class="text-left">
+          <article>
+            <h2>Intro</h2>
+            <p>
+              <strong>L</strong><br>a franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
+              son premier restaurant à Paris dans le quartier latin. Antoine de
+              Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
+              sarrazin!
+            </p>
+          </article>
+          <article>
+            <h2>Développement</h2>
+            <p>
+              La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
+              son premier restaurant à Paris dans le quartier latin. Antoine de
+              Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
+              sarrazin!
+            </p>
+            <br />
+            <p>
+              La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
+              son premier restaurant à Paris dans le quartier latin. Antoine de
+              Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
+              sarrazin!
+            </p>
+            <br />
+            <p>
+              La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
+              son premier restaurant à Paris dans le quartier latin. Antoine de
+              Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
+              sarrazin!
+            </p>
+            <br />
+            <p>
+              La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
+              son premier restaurant à Paris dans le quartier latin. Antoine de
+              Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
+              sarrazin!
+            </p>
+          </article>
+          <article>
+            <h2>Conclusion</h2>
+            <br />
+            <p>
+              La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre
+              son premier restaurant à Paris dans le quartier latin. Antoine de
+              Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
+              sarrazin!
+            </p>
+          </article>
+        </section>
+        <section class="infos-contact">
+          <article class="button">
+              <h4>Recherche</h4>
+              <input type="text" placeholder="Recherche.." />
+              <button>Ok</button>
+          </article>
+          <article class="button">
+              <h4>Newsletter</h4>
+              <input type="text" placeholder="Email.." />
+              <button>S'inscrire</button>
+          </article>
+          <article>
+              <h4>Partager</h4>
+              <nav class="logo">
+              <i class="fa-brands fa-facebook-square"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-twitter-square"></i>
+              </nav>
+              </article>
+        </section>
+    </section>
+<!--  -->
     <section class="auteur">
       <article>
-        <img class="antoine" src="./antoine.jpg" alt="photo du testeur" />
+        <img class="antoine" src="./img/team/antoine.jpg" alt="photo du testeur" />
       </article>
-      <article>
+      <article class="antoine-text">
         <h2>A propos de l'auteur</h2>
         <br />
         <p>
@@ -92,25 +125,34 @@
       </article>
     </section>
     <!--  -->
-    <section class="input">
-      <label for="Email">Email</label>
-      <input type="text" placeholder="Votre email... " id="Email" />
-      <label for="name" id="name">Nom</label>
-      <input type="text" placeholder="Votre nom..." id="name" />
-      <label for="comment">Commentaire</label>
-      <textarea id="comment" placeholder="Votre commentaire..."></textarea>
+    <section class="input-post">
+      <article class="button-post">
+        <label class="label-post" for="Email">Email</label>
+        <input type="text" placeholder="Votre email... " id="Email" />
+      </article>
+      <article class="button-post">
+        <label class="label-post"  for="name" id="name">Nom</label>
+        <input type="text" placeholder="Votre nom..." id="name" />
+      </article>
+      <article class="button-post">
+        <label class="label-post"  for="comment">Commentaire</label>
+        <textarea class="textarea-post" id="comment" placeholder="Votre commentaire..."></textarea>
+      </article>
     </section>
     <!--  -->
     <section class="last-section">
       <h2>Dites nous ce que vous en avez pensé</h2>
       <article class="comment">
-        <img src="./logo_square_black.png" alt="logo" class="logo" />
+        <img src="./img/logo_square_black.png" alt="logo" class="logo" />
+        <div class="text-comment">
         <h3>Mathieu</h3>
         <br />
         <p>J'ai testé moi aussi, et j'ai été agréablement surpris</p>
+       </div>
       </article>
       <article class="comment">
-        <img src="./logo_square_black.png" alt="logo" class="logo" />
+        <img src="./img/logo_square_black.png" alt="logo" class="logo" />
+        <div class="text-comment">
         <h3>Suzette</h3>
         <br />
         <p>
@@ -118,13 +160,61 @@
           et diront qu'elles ont connu le restaurant grâce à cet article auront
           un dessert gratuit. Excellente journée à vous !
         </p>
+      </div>
       </article>
       <article class="comment">
+        <img src="./img/logo_square_black.png" alt="logo" class="logo" />
+        <div class="text-comment">
         <h3>Haters</h3>
-        <img src="./logo_square_black.png" alt="logo" class="logo" />
         <br />
         <p>Ca sent le coup marketing à plein nez !</p>
+      </div>
       </article>
     </section>
+  </main>
+    <footer>
+      <section class="footer-1">
+        <article>
+          <h3>Catégories</h3>
+          <a href="#">Revues</a>
+          <a href="#">Recettes</a>
+          <a href="#">Découvertes</a>
+        </article>
+        <article>
+          <h3>Archives</h3>
+          <a href="#">2019</a>
+          <a href="#">2018</a>
+          <a href="#">2017</a>
+        </article>
+      </section>
+      <section class="footer-2">
+        <article>
+          <h4>Newsletter</h4>
+          <input type="email" id="email" name="email" placeholder="Email..." />
+          <label for="email">S'inscrire</label>
+        </article>
+        <article>
+          <h4>Partager</h4>
+          <a href="#"
+            ><img class="fb-logo-2" alt="Facebook" src="./img/facebook.png"
+          /></a>
+          <a href="#"
+            ><img class="inst-logo-2"
+              alt="Instagram"
+              src="./img/instagram.png"
+          /></a>
+          <a href="#"
+            ><img class="tw-logo-2"
+              alt="Twitter"
+              src="./img/twitter.png"
+          /></a>
+          <a href="#"
+            ><img alt="Youtube" src="./img/youtube.png"
+          /></a>
+        </article>
+      </section>
+      </section>
+    </footer>
+
   </body>
 </html>

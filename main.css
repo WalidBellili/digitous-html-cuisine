@@ -83,6 +83,20 @@ nav ul {
 .flex-and-hide-input {
   visibility: hidden;
 }
+.flex-and-hide-input {
+  width: 300px;
+}
+.responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.responsive,
+h3,
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 footer {
   background-color: black;
   padding: 50px 20px;

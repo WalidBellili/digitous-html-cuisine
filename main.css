@@ -82,7 +82,7 @@ span {
   padding-left: 5%;
 }
 
-footer{
+footer {
   background-color: black;
   padding: 50px 20px;
   display: flex;
@@ -90,41 +90,40 @@ footer{
   justify-content: space-around;
 }
 
-.footer-1{
+.footer-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 350px;
 }
 
-.footer-1 article{
+.footer-1 article {
   display: flex;
   flex-direction: column;
 }
 
-footer h3{
-font-family: "Courgette", Arial, Helvetica, sans-serif;
+footer h3 {
+  font-family: "Courgette", Arial, Helvetica, sans-serif;
   color: white;
   font-size: 20px;
   padding-bottom: 10px;
 }
 
-footer h4{
-    font-family: "Courgette", Arial, Helvetica, sans-serif;
-      color: white;
-      font-size: 20px;
-      padding-bottom: 10px;
-    }
-
-footer a{
-font-family: "Oswald", Arial, Helvetica, sans-serif;
-font-weight: 100; 
-padding-bottom: 10px;
-color: white;
+footer h4 {
+  font-family: "Courgette", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
+footer a {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  padding-bottom: 10px;
+  color: white;
+}
 
-footer label{
+footer label {
   border: 2px solid white;
   border-radius: 5px;
   padding: 6px 20px;
@@ -132,7 +131,7 @@ footer label{
   font-size: 15px;
 }
 
-footer input{
+footer input {
   border: 2px solid white;
   border-radius: 5px;
   padding: 6px 20px;
@@ -140,7 +139,7 @@ footer input{
   margin-bottom: 15px;
 }
 
-.footer-2 img{
+.footer-2 img {
   width: 20px;
   padding: 5px;
   background-color: white;
@@ -148,20 +147,20 @@ footer input{
   height: auto;
 }
 
-
-@media (max-width: 992px) {
-    footer{
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
+@media (min-width: 768px) and (max-width: 992px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
   }
 
-  .footer-1{
-      gap:0px;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
+  .footer-1 {
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 }
 
-
+@media (min-width: 992px) {
+}
